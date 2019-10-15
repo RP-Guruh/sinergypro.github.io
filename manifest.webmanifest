@@ -1,25 +1,25 @@
 {
-  "background_color": "white",
+  "background_color": "purple",
   "description": "Property Catalogue",
   "display": "standalone",
   "icons": [
    {
-      "src": "icons/logo.png",
+      "src": "logo.png",
       "sizes": "72x72",
       "type": "image/png"
     },
     {
-      "src": "icons/logo.png",
+      "src": "logo.png",
       "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "icons/logo.png",
+      "src": "logo.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "icons/logo.png",
+      "src": "logo.png",
       "sizes": "144x144",
       "type": "image/png"
     }
