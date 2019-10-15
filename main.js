@@ -1,5 +1,31 @@
+self.addEventListener('install', function(e) {
+ e.waitUntil(
+   caches.open('video-store').then(function(cache) {
+     return cache.addAll([
+       '/',
+       '/index.html',
+       '/main.js',
+       '/style.css'
+     ]);
+   })
+ );
+});
 
-if ('serviceWorker' in navigator) {
+self.addEventListener('fetch', function(e) {
+  console.log(e.request.url);
+  e.respondWith(
+    caches.match(e.request).then(function(response) {
+      return response || fetch(e.request);
+    })
+  );
+});
+
+
+
+
+
+
+/* if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
       // Registration was successful
@@ -37,3 +63,4 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
+*/
