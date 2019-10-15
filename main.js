@@ -1,5 +1,13 @@
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker
+           .register('/sw.js')
+           .then(function() { console.log('Service Worker Registered'); });
+}
 
- if ('serviceWorker' in navigator) {
+
+
+
+/* if ('serviceWorker' in navigator) {
   window.addEventListener('load', function() {
     navigator.serviceWorker.register('/serviceworker.js').then(function(registration) {
       // Registration was successful
@@ -37,3 +45,4 @@ window.addEventListener('beforeinstallprompt', (e) => {
       });
   });
 });
+*/
