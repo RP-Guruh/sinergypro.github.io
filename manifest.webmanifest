@@ -5,25 +5,9 @@
   "icons": [
    {
       "src": "logo.png",
-      "sizes": "72x72",
-      "type": "image/png"
-    },
-    {
-      "src": "logo.png",
-      "sizes": "96x96",
-      "type": "image/png"
-    },
-    {
-      "src": "logo.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    },
-    {
-      "src": "logo.png",
-      "sizes": "144x144",
+      "sizes": "131x131",
       "type": "image/png"
     }
-    
   ],
   
   "name": "Solusi Kebutuhan Property Anda",
